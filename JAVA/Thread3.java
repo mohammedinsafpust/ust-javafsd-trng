@@ -1,17 +1,18 @@
-package com.week3;
+package com.day_5;
 
-public class Thread3 extends Thread {
-
+public class Thread3 implements Runnable {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Thread t3=new Thread3();
-		try {
-			System.out.println("hi");
-		t3.sleep(5000);
-		System.out.println("slept");
-	}catch(Exception ex){
-		ex.getStackTrace();
+		Thread Thread1=new Thread("Guru1");
+		Thread Thread2=new Thread("Guru2");
+		Thread1.start();
+		Thread2.start();
+		System.out.println("Thread names are following");
+		System.out.println(Thread1.getName());
+		System.out.println(Thread2.getName());
 	}
-		}
+	@Override
+	public void run() {
+		
+	}
 
 }
