@@ -35,7 +35,7 @@ public class Week3_1 {
 		//----------------------------------------------------------------------------------------------------
 		
 		
-		OutputStream out = new FileOutputStream("C:\\Users\\ustjavafsdb207\\Downloads\\test.xls");
+		OutputStream out = new FileOutputStream("C:\\Users\\ustjavafsdb207\\Downloads\\test.xlxs");
 		
 		
 		try {
