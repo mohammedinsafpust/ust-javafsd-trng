@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body{
+background-image: url("C:\Users\ustjavafsdb212\eclipse-workspace\Frontend\src\main\webapp\WEB-INF\html\UST.jpg")
+}
+.container{
+background-color:blanchedalmond;
+font-size:20px;
+width:700px;
+padding-top:4px;
+height:300px;
+margin-left:300px;
+margin-top:50px;
+border-radius:50px;
+}
+.content{
+margin-left:350px;
+margin-top:-38px;
+}
+.img{
+margin-left:50px;
+top:50px;
+margin-top:50px;
+width:10px;
+height:10px;
+padding:2px;
+
+}
+.output
+{
+font-size:20px;
+margin-left:600px;
+margin-top:80px;
+}
+
+
+</style>
+<script type="text/javascript">
+function display()
+{
+	var fname=document.getElementById("fname").value;
+	var lname=document.getElementById("lname").value;
+	var city=document.getElementById("city").value;
+	
+	document.getElementById("heading").innerHTML="Employee Details";
+	document.getElementById("output1").innerHTML="First Name: "+fname;
+	document.getElementById("output2").innerHTML="Last Name: "+lname;
+	document.getElementById("output3").innerHTML="City: "+city;
+	
+	
+	//document.write("<center> <b>")
+	
+	//document.write("Employee Details");
+	//document.write("</b>");
+	//document.write("<br>");
+	//document.write("<br>");
+	//document.write("<br>");
+	//document.write(" First Name:"+fname);
+	//document.write("<br>");
+	//document.write("\n Last Name:"+lname);
+	//document.write("<br>");
+	//document.write("\n City:"+city);
+	
+	}
+</script>
+
+</head>
+<body background-image="C:\Users\ustjavafsdb212\eclipse-workspace\Frontend\src\main\webapp\WEB-INF\images\ustt.png" width="100%" height="50%">
+
+<div class="container">
+<div class="img">
+<img src="C:\Users\ustjavafsdb212\eclipse-workspace\Frontend\src\main\webapp\WEB-INF\images\ustt.png">
+</div>
+<div class="content">
+
+<b>Employee Details</b><br><br><br>
+First Name &nbsp&nbsp&nbsp<input type="text" id="fname" name="fname"><br><br>
+Last Name &nbsp&nbsp&nbsp<input type="text" id="lname" name="lname"><br><br>
+City &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="city" name="city"><br><br>
+<input type="button" value="submit" onclick="display()">
+</div>
+</div>
+
+<div class="output">
+<p id="heading"></p>
+<p &nbsp id="output1"></p>
+<p id="output2"></p>
+<p id="output3"></p>
+</div>
+
+</body>
+</html>
+Footer
+© 2022 GitHub, Inc.
